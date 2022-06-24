@@ -7,7 +7,7 @@ Grafana installation: https://grafana.com/grafana/download?platform=windows
 Prometheus installation: https://prometheus.io/download/
 
 Configure Prometheus:
-`scrape_configs:
+```scrape_configs:
     #prometheus self monitor
   - job_name: 'prometheus'
     static_configs:
@@ -18,7 +18,7 @@ Configure Prometheus:
     static_configs:
       - targets: ['NODE_IP:9100']
         labels:
-          instance: node1`
+          instance: node1```
 
 
 ## Linux:

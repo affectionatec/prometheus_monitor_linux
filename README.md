@@ -4,6 +4,7 @@
 ## Windows:
 
 Grafana installation: https://grafana.com/grafana/download?platform=windows
+
 Prometheus installation: https://prometheus.io/download/
 
 Configure Prometheus:

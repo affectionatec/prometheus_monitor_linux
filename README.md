@@ -7,7 +7,8 @@ Grafana installation: https://grafana.com/grafana/download?platform=windows
 Prometheus installation: https://prometheus.io/download/
 
 Configure Prometheus:
-```scrape_configs:
+```
+scrape_configs:
     #prometheus self monitor
   - job_name: 'prometheus'
     static_configs:
@@ -18,17 +19,19 @@ Configure Prometheus:
     static_configs:
       - targets: ['NODE_IP:9100']
         labels:
-          instance: node1```
+          instance: node1
+```
 
 
 ## Linux:
 
 Node_exporter: https://github.com/prometheus/node_exporter/releases
-
-`wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+```
+wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
 tar -zxvf node_exporter-1.3.1.linux-amd64.tar.gz 
 cd node_exporter-1.3.1.linux-amd64/
-./node_exporter `
+./node_exporter
+```
 
 
 ## On windows
